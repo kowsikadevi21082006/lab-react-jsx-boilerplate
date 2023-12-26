@@ -30,12 +30,12 @@ export default class AppClass extends Component{
   render(){
     const data = this.imageData()
     return (
-      <h1>Kalvium gallary</h1>,
+      [<h1>Kalvium gallary</h1>,
       <div className="display">
         {data.map(item => (
             <img key={item.id} src={item.img} alt="" />
         ))}
-      </div>
+      </div>]
     )
   }
 }
